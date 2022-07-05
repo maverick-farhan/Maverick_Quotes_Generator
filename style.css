@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;   
+}
+
+body{
+    background-color:#B1D0E0
+}
+
+.wrapper{
+    width:400px;
+    border-radius:5px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
+}
+.container{
+    width:100%;
+    background:#1A374D;
+    padding:50px 40px;
+    box-shadow: 0 13px 40px rgba(12,12,12,.6);
+    position:relative;
+    border-radius:14% 1%;
+    text-align:center;
+}
+
+/* You can add background shape also behind the main container */
+
+.container::after{
+    content:'';
+    position:absolute;
+    width:80%;
+    height:120%;
+    background-color: #7cacbf;
+    z-index:-1;
+    top:-10%;
+    left:10%;
+    border-radius:1% 14%;
+}
+
+.container p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style:italic;
+    color:#d0eaf6;
+    line-height:2em;
+    font-size:18px;
+    font-weight:900
+}
+
+.container p::before{
+box-sizing: border-box;
+    font-size:45px;
+    display:inline-flex;
+    margin-right:5px;
+    content:'\f10d';
+    font-family:"Font Awesome 5 Free";
+}
+
+.container p::after{
+box-sizing: border-box;
+    font-size:45px;
+    display:inline-flex;
+    margin-left:5px;
+    content:'\f10e';
+    font-family:"Font Awesome 5 Free";
+}
+
+/* lfqt f10d */
+/* rtqt f10e */
+
+.container h3{
+    text-decoration: underline;
+
+    color:#fff;
+    margin:20px 0 60px 0;
+    font-weight:400;
+    text-transform: capitalize;
+}
+
+
+
+.container button{
+    
+    background-color: #fff;
+    border:none;
+    padding:11px 21px;
+    border-radius:5px;
+    font-size:12px;
+    font-weight:500;
+    color:#1A374D;
+    cursor:pointer;
+}
+
+
